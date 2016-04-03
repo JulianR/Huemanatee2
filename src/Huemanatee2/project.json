@@ -1,0 +1,42 @@
+﻿{
+  "version": "1.0.0-*",
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Owin": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+    "Nancy": "1.4.3",
+    "Nancy.Owin": "1.4.1",
+    "Q42.HueApi": "2.2.5",
+    "LiteDB": "2.0.0-rc",
+    "System.Threading.Tasks": "4.0.0.0",
+    "threejs.TypeScript.DefinitelyTyped": "3.2.0"
+  },
+
+  "commands": {
+    "web": "Microsoft.AspNet.Server.Kestrel"
+  },
+
+  "frameworks": {
+    "dnx46": {
+      "frameworkAssemblies": {
+        "System.Threading.Tasks": "4.0.10.0"
+      },
+      "dependencies": {
+        "Owin": "1.0.0"
+      }
+    }
+  },
+  "exclude": [
+    "wwwroot",
+    "node_modules"
+  ],
+  "publishExclude": [
+    "**.user",
+    "**.vspscc"
+  ],
+  "content": "Views/*"
+}
